@@ -1,0 +1,9 @@
+{
+  "name": "tl8-react",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "tl8-react/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project tl8-react --web",
+  "targets": {}
+}

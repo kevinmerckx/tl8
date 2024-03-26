@@ -1,0 +1,6 @@
+{
+  "view1": {
+    "key1": "Hello world!",
+    "key2": "The answer is {{value}}"
+  }
+}
