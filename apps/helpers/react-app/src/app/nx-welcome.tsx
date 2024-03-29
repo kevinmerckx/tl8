@@ -1,4 +1,4 @@
-import { Tl8 } from "@react-app-tl8/tl8-react";
+import { Tl8 } from '@react-app-tl8/tl8-react';
 
 /*
  * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -13,7 +13,9 @@ export function NxWelcome({ title }: { title: string }) {
       <h1>
         <Tl8 of="view1.key1" />
       </h1>
-      <h2>With params: <Tl8 of="view1.key2" params={{value: '42'}}/></h2>
+      <h2>
+        With params: <Tl8 of="view1.key2" params={{ value: '42' }} />
+      </h2>
     </>
   );
 }
