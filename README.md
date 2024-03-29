@@ -8,6 +8,8 @@ Translate your Angular application the easy way! Want to save developers' time w
 npm install tl8-react
 ```
 
+and more documentation [here](./packages/tl8-react/README.md).
+
 ## Features
 
 * navigate in your app from the TL8 application
