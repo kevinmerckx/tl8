@@ -5,6 +5,10 @@ import { TL8Provider } from '@react-app-tl8/tl8-react';
 import en from './en.json';
 import fr from './fr.json';
 
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+
 const tl8Config = {
   currentLang: 'en',
   translations: {
@@ -13,13 +17,8 @@ const tl8Config = {
   },
 };
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
 root.render(
-  <StrictMode>
-    <TL8Provider config={tl8Config}>
-      <App />
-    </TL8Provider>
-  </StrictMode>
+  <TL8Provider config={tl8Config}>
+    <App />
+  </TL8Provider>
 );
