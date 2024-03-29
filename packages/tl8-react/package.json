@@ -3,6 +3,14 @@
   "version": "0.0.1-beta.2",
   "main": "./index.js",
   "types": "./index.d.ts",
+  "author": {
+    "email": "kmpeachdev@gmail.com",
+    "name": "Kevin Merckx"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/kevinmerckx/tl8"
+  },
   "exports": {
     ".": {
       "import": "./index.mjs",

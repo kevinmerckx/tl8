@@ -1,9 +1,9 @@
-import {
+import React, {
   createContext,
   useCallback,
   useEffect,
   useMemo,
-  useState,
+  useState
 } from 'react';
 import {
   TL8TargetAPI,
@@ -13,7 +13,7 @@ import {
 
 const tl8Target = TL8TargetAPI();
 
-export const useTL8Context = ({
+const useTL8Context = ({
   translations,
   currentLang: defaultCurrentLang,
 }: {
@@ -112,4 +112,14 @@ interface ITL8Context {
   overwrittenTranslations: Record<string, any>;
 }
 
+interface TL8Config {
+  translations: Record<string, any>;
+  currentLang: string;
+}
+
 export const TL8Context = createContext<ITL8Context | null>(null);
+
+export const TL8Provider = ({ config, children}: { config: TL8Config, children: React.ReactNode }) => {
+  const value = useTL8Context(config);
+  return <TL8Context.Provider value={value}>{children}</TL8Context.Provider>
+}

@@ -25,8 +25,6 @@ export interface TargetApiGateway {
   ) => void;
 }
 
-declare const TL8_TARGET_API: TargetApiGateway;
-
 export function TL8TargetAPI() {
   return (window as any).TL8_TARGET_API as TargetApiGateway | undefined;
 }
