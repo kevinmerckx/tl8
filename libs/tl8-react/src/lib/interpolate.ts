@@ -1,4 +1,3 @@
-
 const MATCHER = /{{\s?([^{}\s]*)\s?}}/g;
 
 export function interpolate(expr: string, params?: any): string {
@@ -21,7 +20,11 @@ function getValue(target: any, key: string): any {
   key = '';
   do {
     key += keys.shift();
-    if (isDefined(target) && isDefined(target[key]) && (typeof target[key] === 'object' || !keys.length)) {
+    if (
+      isDefined(target) &&
+      isDefined(target[key]) &&
+      (typeof target[key] === 'object' || !keys.length)
+    ) {
       target = target[key];
       key = '';
     } else if (!keys.length) {
