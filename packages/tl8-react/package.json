@@ -1,6 +1,6 @@
 {
-  "name": "@react-app-tl8/tl8-react",
-  "version": "0.0.1",
+  "name": "tl8-react",
+  "version": "0.0.1-beta.2",
   "main": "./index.js",
   "types": "./index.d.ts",
   "exports": {
@@ -8,5 +8,12 @@
       "import": "./index.mjs",
       "require": "./index.js"
     }
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
   }
 }
