@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@react-app-tl8/tl8-react": ["packages/tl8-react/src/index.ts"]
+      "@react-app-tl8/tl8-react": ["packages/tl8-react/src/index.ts"],
+      "tl8": ["packages/tl8-angular/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

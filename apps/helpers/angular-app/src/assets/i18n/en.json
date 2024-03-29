@@ -1,0 +1,8 @@
+{
+  "demo": {
+    "header": "TL8 Demo Page",
+    "introText1": "Every text of this application is translated. That means that, with TL8, you can edit everything!",
+    "introText2": "Give it a try. On the left of the TL8 application, you should see all the available translations currently visible.",
+    "introText3": "You can also change the language, also on the left of the TL8 application, at the bottom."
+  }
+}
