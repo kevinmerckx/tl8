@@ -2,6 +2,10 @@
   "name": "@react-app-tl8/source",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "20"
+  },
+  "engineStrict": true,
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
